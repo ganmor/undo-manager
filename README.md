@@ -4,7 +4,8 @@ undo-manager
 Very simple undo / redo manager.
 
 Navigate through an array of action pointers
-Amd compliant.
+
+(Amd compliant)
 
 How to use
 -------
