@@ -13,16 +13,16 @@ Or you can use it with amd.
 
 var stack = UndoManager('MyEditor');
 
-# Add an Action to the stack
+### Add an Action to the stack
 
 stack.addAction(doActionFunction, undoActionFunction, context);
 
-# Undo the last action
+### Undo the last action
 
 stack.undo();
 
 
-# Redo the last action
+### Redo the last action
 
 stack.redo();
 
