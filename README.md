@@ -42,3 +42,10 @@ stack.redo();
 stack.clear();
 ```
 
+### Utility methods
+
+```
+stack.isLastOfStack();
+stack.isFirstOfStack();
+```
+
