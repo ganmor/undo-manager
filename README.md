@@ -36,3 +36,9 @@ stack.undo();
 stack.redo();
 ```
 
+### Clear the stack
+
+```
+stack.clear();
+```
+
