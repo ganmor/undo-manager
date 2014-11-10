@@ -5,7 +5,7 @@
 	
 	/**
 	*
-	* TODO: Maybe their should be a maximum stack size ?
+	* TODO: Maybe there should be a maximum stack size ?
 	*	Should it be global ? per instance ? 
 	**/
 	var undoManagersByStackName = {},
@@ -28,8 +28,8 @@
 		},
 
 		/**
-			 * Undo the last action on the stack
-			 */
+		 * Undo the last action on the stack
+		 */
 		undo : function () {
 
 			if (this.actionPointer < -1) { return; }
@@ -53,24 +53,24 @@
 		},
 
 		/**
-			 * Did we undo some action ?
-			 * @returns {Boolean}
-			 */
+		 * Did we undo some action ?
+		 * @returns {Boolean}
+		 */
 		isLastOfStack : function () {
 			return this.actionPointer >= this.actionStack.length - 1;
 		},
 
 		/**
-			 * Have we reached the beginning ?
-			 */
+		 * Have we reached the beginning ?
+		 */
 		isFirstOfStack : function () {
 			return this.actionPointer < 0;
 		},
 
 
 		/**
-			 * Reset the action stack
-			 */
+		 * Reset the action stack
+		 */
 		clean : function () {
 			this.actionStack = [];
 			this.actionPointer = -1;
